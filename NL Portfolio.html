@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nabil Lachgar — Chief of Staff &amp; Business Operations</title>
+<meta name="description" content="Chief of Staff and Business Operations leader turning manual, ambiguous processes into working systems across fintech, health, travel, and energy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EDEFEA;
+    --paper-raised:#F5F4EE;
+    --ink:#17211B;
+    --ink-soft:#4B564E;
+    --ink-faint:#78806F;
+    --line:#C7CBBC;
+    --line-soft:#DADCCF;
+    --brass:#93672C;
+    --brass-soft:#B98B3E;
+    --teal:#2B6657;
+    --teal-soft:#3F8672;
+    --max:860px;
+    --wide:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Public Sans',-apple-system,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{
+    font-family:'Fraunces',Georgia,serif;
+    font-weight:500;
+    color:var(--ink);
+    margin:0;
+  }
+  p{margin:0;}
+  a{color:inherit;}
+  .skip-link{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--paper);padding:10px 16px;z-index:100;}
+  .skip-link:focus{left:12px;top:12px;}
+  ::selection{background:var(--brass-soft);color:#fff;}
+
+  /* ---- shell ---- */
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  .wrap-wide{max-width:var(--wide);margin:0 auto;padding:0 28px;}
+
+  header{
+    position:sticky;top:0;z-index:20;
+    background:rgba(237,239,234,0.92);
+    backdrop-filter:saturate(140%) blur(6px);
+    border-bottom:1px solid var(--line-soft);
+  }
+  .nav{
+    max-width:var(--wide);margin:0 auto;padding:18px 28px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .nav-name{font-family:'Fraunces',serif;font-weight:500;font-size:18px;text-decoration:none;}
+  .nav-links{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:14px;}
+  .nav-links a{text-decoration:none;color:var(--ink-soft);border-bottom:1px solid transparent;padding-bottom:2px;transition:color .15s, border-color .15s;}
+  .nav-links a:hover{color:var(--ink);border-color:var(--brass-soft);}
+  .nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:2px;padding:6px 10px;font-family:'Public Sans',sans-serif;font-size:13px;color:var(--ink);}
+
+  /* ---- hero ---- */
+  .hero{padding:88px 0 64px;}
+  .hero-kicker{
+    font-size:13px;letter-spacing:.02em;color:var(--brass);
+    margin-bottom:22px;display:flex;align-items:center;gap:10px;
+  }
+  .hero-kicker::before{content:"";width:26px;height:1px;background:var(--brass);display:inline-block;}
+  h1.hero-head{
+    font-size:clamp(34px,5.4vw,58px);
+    line-height:1.08;
+    letter-spacing:-0.01em;
+    max-width:13ch;
+  }
+  .hero-sub{
+    margin-top:26px;max-width:52ch;
+    font-size:18px;line-height:1.65;color:var(--ink-soft);
+  }
+  .hero-actions{margin-top:34px;display:flex;gap:18px;flex-wrap:wrap;align-items:center;}
+  .btn{
+    display:inline-block;padding:12px 22px;border:1px solid var(--ink);
+    text-decoration:none;font-size:14px;color:var(--ink);
+    transition:background .15s,color .15s;
+  }
+  .btn:hover{background:var(--ink);color:var(--paper);}
+  .link-quiet{font-size:14px;color:var(--ink-soft);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line);}
+  .link-quiet:hover{color:var(--ink);text-decoration-color:var(--brass-soft);}
+
+  /* ---- stat strip ---- */
+  .stats{
+    border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);
+    padding:34px 0;
+  }
+  .stats-grid{
+    max-width:var(--wide);margin:0 auto;padding:0 28px;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+  }
+  .stat-num{font-family:'Fraunces',serif;font-size:34px;color:var(--ink);}
+  .stat-label{font-size:13.5px;color:var(--ink-soft);margin-top:6px;max-width:26ch;}
+
+  /* ---- section scaffolding ---- */
+  section{padding:96px 0;}
+  .section-head{margin-bottom:52px;max-width:56ch;}
+  .section-eyebrow{font-size:13px;color:var(--brass);margin-bottom:12px;}
+  h2.section-title{font-size:clamp(26px,3.4vw,36px);}
+  .section-dek{margin-top:14px;color:var(--ink-soft);font-size:16.5px;line-height:1.65;}
+
+  /* ---- focus columns ---- */
+  .focus-grid{
+    max-width:var(--wide);margin:0 auto;padding:0 28px;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:44px;
+  }
+  .focus-item{border-top:1px solid var(--ink);padding-top:18px;}
+  .focus-item h3{font-size:19px;margin-bottom:10px;}
+  .focus-item p{color:var(--ink-soft);font-size:15px;line-height:1.6;}
+
+  /* ---- work ---- */
+  .work{background:var(--paper-raised);}
+  .project{
+    max-width:var(--wide);margin:0 auto;padding:0 28px;
+    border-top:1px solid var(--line-soft);
+    padding-top:52px;padding-bottom:52px;
+    display:grid;grid-template-columns:220px 1fr;gap:48px;
+  }
+  .project:last-child{padding-bottom:0;}
+  .project-meta{color:var(--ink-soft);font-size:14px;}
+  .project-index{font-family:'Fraunces',serif;font-size:15px;color:var(--brass);margin-bottom:10px;}
+  .project-meta .company{display:block;color:var(--ink);font-weight:500;margin-top:4px;}
+  .project-title{font-size:26px;margin-bottom:16px;max-width:22ch;}
+  .project-desc{color:var(--ink-soft);font-size:16px;line-height:1.65;max-width:60ch;}
+  .flow{margin-top:28px;display:flex;flex-direction:column;gap:0;}
+  .flow-step{
+    display:grid;grid-template-columns:26px 1fr;gap:14px;
+    padding:12px 0;border-top:1px solid var(--line-soft);
+  }
+  .flow-step:first-child{border-top:none;}
+  .flow-num{font-family:'Fraunces',serif;color:var(--brass-soft);font-size:14px;padding-top:1px;}
+  .flow-text{font-size:15px;color:var(--ink);line-height:1.55;}
+  .tags{margin-top:24px;display:flex;flex-wrap:wrap;gap:9px;}
+  .tag{
+    font-size:12.5px;color:var(--ink-soft);border:1px solid var(--line);
+    padding:5px 11px;
+  }
+
+  /* ---- about ---- */
+  .about-lede{max-width:66ch;font-size:18px;line-height:1.75;color:var(--ink-soft);}
+  .about-lede strong{color:var(--ink);font-weight:600;}
+  .timeline{margin-top:56px;max-width:var(--max);}
+  .tl-row{
+    display:grid;grid-template-columns:140px 1fr;gap:32px;
+    padding:26px 0;border-top:1px solid var(--line-soft);
+  }
+  .tl-row:last-child{border-bottom:1px solid var(--line-soft);}
+  .tl-years{font-size:14px;color:var(--ink-faint);padding-top:2px;}
+  .tl-role{font-size:18px;font-weight:600;font-family:'Public Sans',sans-serif;}
+  .tl-company{color:var(--brass);font-weight:500;}
+  .tl-desc{margin-top:8px;color:var(--ink-soft);font-size:15px;line-height:1.6;max-width:64ch;}
+
+  .edu-lang{
+    margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px;
+    max-width:var(--max);
+  }
+  .edu-lang h3{font-size:14px;color:var(--ink-faint);margin-bottom:14px;font-family:'Public Sans',sans-serif;font-weight:600;}
+  .edu-lang p{font-size:15px;color:var(--ink-soft);line-height:1.6;}
+  .edu-lang strong{color:var(--ink);}
+
+  /* ---- contact ---- */
+  .contact{background:var(--ink);color:var(--paper);}
+  .contact h2{color:var(--paper);font-size:clamp(30px,5vw,48px);max-width:16ch;}
+  .contact-sub{margin-top:18px;color:#B9C0B4;font-size:17px;max-width:44ch;}
+  .contact-email{
+    display:inline-block;margin-top:36px;font-family:'Fraunces',serif;
+    font-size:clamp(24px,4vw,34px);color:var(--paper);text-decoration:none;
+    border-bottom:1px solid var(--teal-soft);padding-bottom:4px;
+  }
+  .contact-email:hover{border-color:var(--brass-soft);}
+  footer{
+    max-width:var(--wide);margin:0 auto;padding:0 28px;
+    margin-top:72px;padding-top:24px;border-top:1px solid #33403A;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+    font-size:13px;color:#8B9587;
+  }
+
+  @media (max-width:760px){
+    .nav-links{display:none;}
+    .nav-toggle{display:inline-block;}
+    .nav.open .nav-links{
+      display:flex;position:absolute;top:60px;left:0;right:0;
+      background:var(--paper);flex-direction:column;gap:0;
+      border-bottom:1px solid var(--line-soft);padding:8px 28px 18px;
+    }
+    .nav.open .nav-links a{padding:10px 0;border-bottom:1px solid var(--line-soft);width:100%;}
+    .stats-grid{grid-template-columns:1fr;gap:28px;}
+    .focus-grid{grid-template-columns:1fr;gap:34px;}
+    .project{grid-template-columns:1fr;gap:20px;}
+    .tl-row{grid-template-columns:1fr;gap:6px;}
+    .edu-lang{grid-template-columns:1fr;gap:28px;}
+    section{padding:64px 0;}
+    .hero{padding:56px 0 44px;}
+  }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header>
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-name">Nabil Lachgar</a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="hero-kicker">Chief of Staff &amp; Business Operations, San Francisco</p>
+      <h1 class="hero-head">Ambiguous mandates, built into working systems.</h1>
+      <p class="hero-sub">I'm a Chief of Staff and business operations leader with a decade advancing executive priorities and running cross-functional initiatives at high-growth startups across fintech, health, travel, and energy. Founders and executives bring me in when the mandate is loosely defined and the stakes are not — M&amp;A diligence, GTM strategy, annual planning — and I build the context and judgment to represent them with limited direction.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn">See the work</a>
+        <a href="mailto:Nlachgar@gmail.com" class="link-quiet">Nlachgar@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="stats-grid">
+      <div>
+        <p class="stat-num">35%</p>
+        <p class="stat-label">Cut in operational overhead after rebuilding incentive workflows around AI agents at Rock Rabbit</p>
+      </div>
+      <div>
+        <p class="stat-num">$45M</p>
+        <p class="stat-label">ARR earned through three M&amp;A diligence processes I led at Commure</p>
+      </div>
+      <div>
+        <p class="stat-num">10x</p>
+        <p class="stat-label">Increase in organic inbound leads after a ground-up GTM overhaul at Visia</p>
+      </div>
+    </div>
+  </div>
+
+  <section id="focus">
+    <div class="section-head wrap-wide">
+      <p class="section-eyebrow">Where I operate</p>
+      <h2 class="section-title">Three ways I show up for a founder or exec.</h2>
+    </div>
+    <div class="focus-grid">
+      <div class="focus-item">
+        <h3>Executive partnership</h3>
+        <p>Chief of Staff support, stakeholder alignment, and board and investor communication — standing in for senior leaders with the judgment to know what they'd want done.</p>
+      </div>
+      <div class="focus-item">
+        <h3>Strategy &amp; planning</h3>
+        <p>Annual planning, OKR frameworks, GTM strategy, M&amp;A due diligence, and P&amp;L management — turning a loose mandate into a plan people can execute against.</p>
+      </div>
+      <div class="focus-item">
+        <h3>AI &amp; automation</h3>
+        <p>Deploying AI tools and workflow automation — agent-based tooling, SQL, HubSpot, Tableau, Metabase — so teams operate efficiently as they scale.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="section-head wrap-wide">
+      <p class="section-eyebrow">Selected work</p>
+      <h2 class="section-title">From manual process to working system.</h2>
+      <p class="section-dek">Three projects where the job was the same underneath: find the process that's eating a team's time by hand, and rebuild it so the time goes somewhere that compounds.</p>
+    </div>
+
+    <article class="project">
+      <div class="project-meta">
+        <p class="project-index">01 / AI &amp; automation</p>
+        <span>2025 – 2026</span>
+        <span class="company">Rock Rabbit</span>
+      </div>
+      <div>
+        <h3 class="project-title">Incentive verification, not manual combing</h3>
+        <p class="project-desc">Rock Rabbit's analysts were qualifying incentives by hand — state by state, region by region, locality by locality — before a project could even be scoped. I built a scraping tool on Claude and n8n that turned that manual combing process into an incentive verification workflow, so analysts check and confirm rather than search from scratch.</p>
+        <div class="flow">
+          <div class="flow-step"><span class="flow-num">01</span><span class="flow-text">Analysts spend hours combing state, regional, and local incentive sources by hand.</span></div>
+          <div class="flow-step"><span class="flow-num">02</span><span class="flow-text">Claude and n8n scrape and structure that same incentive data automatically.</span></div>
+          <div class="flow-step"><span class="flow-num">03</span><span class="flow-text">Analysts shift to verification and to folding incentives into the product — the higher-value work.</span></div>
+          <div class="flow-step"><span class="flow-num">04</span><span class="flow-text">More incentives surface faster, which means more projects get funded and more revenue.</span></div>
+        </div>
+        <div class="tags">
+          <span class="tag">AI agents</span>
+          <span class="tag">n8n</span>
+          <span class="tag">Workflow automation</span>
+          <span class="tag">Claude</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-meta">
+        <p class="project-index">02 / Healthcare ops</p>
+        <span>Mar 2020 – Nov 2022</span>
+        <span class="company">Wellpay (now ThruAI)</span>
+      </div>
+      <div>
+        <h3 class="project-title">Launching an at-home diagnostics platform</h3>
+        <p class="project-desc">I owned the end-to-end launch of an at-home diagnostics platform and digital wellness program for 15,000 members, managing procurement, insurer relations, and the cross-functional rollout. Alongside it, I built a digital healthcare partnership marketplace of 500+ companies from the ground up.</p>
+        <div class="flow">
+          <div class="flow-step"><span class="flow-num">01</span><span class="flow-text">Secure procurement and insurer relationships to support at-home diagnostics.</span></div>
+          <div class="flow-step"><span class="flow-num">02</span><span class="flow-text">Roll the platform and digital wellness program out to 15,000 members.</span></div>
+          <div class="flow-step"><span class="flow-num">03</span><span class="flow-text">Build a 500+ company partnership marketplace, generating $2M in partnership-driven revenue.</span></div>
+        </div>
+        <div class="tags">
+          <span class="tag">Healthcare ops</span>
+          <span class="tag">Insurer relations</span>
+          <span class="tag">Partnerships</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-meta">
+        <p class="project-index">03 / Fintech &amp; sustainability</p>
+        <span>Sept 2019 – Mar 2020</span>
+        <span class="company">TripActions (now Navan)</span>
+      </div>
+      <div>
+        <h3 class="project-title">Shipping a carbon footprint analytics tool</h3>
+        <p class="project-desc">I developed the launch strategy for TripActions Liquid, the company's fintech expense platform, and shipped a carbon footprint analytics tool alongside it that gave travelers a reason to choose the more sustainable option.</p>
+        <div class="flow">
+          <div class="flow-step"><span class="flow-num">01</span><span class="flow-text">Define the launch strategy for Liquid, TripActions' expense platform.</span></div>
+          <div class="flow-step"><span class="flow-num">02</span><span class="flow-text">Ship a carbon footprint analytics tool alongside it for booked travel.</span></div>
+          <div class="flow-step"><span class="flow-num">03</span><span class="flow-text">Sustainable travel choices increase by 45%.</span></div>
+        </div>
+        <div class="tags">
+          <span class="tag">Fintech</span>
+          <span class="tag">Sustainability</span>
+          <span class="tag">Product launch</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="about">
+    <div class="wrap-wide">
+      <div class="section-head">
+        <p class="section-eyebrow">Background</p>
+        <h2 class="section-title">A decade of being trusted with limited direction.</h2>
+      </div>
+      <p class="about-lede">I've spent ten years as the <strong>operational partner founders and executives bring in when the direction is limited and the priorities are real</strong> — Chief of Staff work, GTM strategy, M&amp;A diligence, annual planning, across fintech, health, travel, and energy. What carries across every one of those rooms is the same instinct: find the manual process quietly costing a team its time, and rebuild it as a system, increasingly with AI doing the heavy lifting so people can spend their time on the parts of the job that actually need judgment.</p>
+
+      <div class="timeline">
+        <div class="tl-row">
+          <div class="tl-years">2025 – 2026</div>
+          <div>
+            <p class="tl-role">Chief of Staff · <span class="tl-company">Rock Rabbit</span></p>
+            <p class="tl-desc">Spearheaded company-wide AI adoption to automate manual incentive workflows and built agent-based tools that cut operational overhead by 35%. Built AI-powered GTM dashboards giving sales real-time pipeline visibility and investor-ready reporting.</p>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-years">2024 – 2025</div>
+          <div>
+            <p class="tl-role">Head of GTM Strategy &amp; Operations · <span class="tl-company">Visia</span></p>
+            <p class="tl-desc">Structured and drove a company-wide GTM overhaul from the ground up, with little precedent to build from — a 10x increase in organic inbound leads. Redesigned the sales operating rhythm end-to-end, cutting sales cycle time by 30%.</p>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-years">2022 – 2024</div>
+          <div>
+            <p class="tl-role">Chief of Staff · <span class="tl-company">Commure</span></p>
+            <p class="tl-desc">Served as deal lead across three M&amp;A diligence processes for AI digital health companies, earning the trust of banking partners and investors to help yield $45M in ARR. Partnered with NGOs and health systems on new revenue initiatives spanning multiple teams, driving $5M+ in incremental ARR.</p>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-years">2020 – 2022</div>
+          <div>
+            <p class="tl-role">Director of Operations · <span class="tl-company">Wellpay (now ThruAI)</span></p>
+            <p class="tl-desc">Owned end-to-end launch of an at-home diagnostics platform and digital wellness program for 15K members. Built a digital healthcare partnership marketplace of 500+ companies, generating $2M in partnership-driven revenue.</p>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-years">2019 – 2020</div>
+          <div>
+            <p class="tl-role">Business Operations Manager · <span class="tl-company">TripActions (now Navan)</span></p>
+            <p class="tl-desc">Developed launch strategy for TripActions Liquid, a fintech expense platform, and shipped a carbon footprint analytics tool that increased sustainable travel choices by 45%.</p>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-years">2016 – 2019</div>
+          <div>
+            <p class="tl-role">Performance Marketing Lead, Uplift · Associate, Red Ventures</p>
+            <p class="tl-desc">Optimized travel integrations at Uplift, driving a 25% gain in campaign efficiency and a 40% lift in ancillary revenue. Earlier, managed paid search and social campaigns at Red Ventures.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-lang">
+        <div>
+          <h3>Education</h3>
+          <p><strong>University of North Carolina at Chapel Hill</strong> — Kenan-Flagler Business School<br>B.S. in Business Administration, 2012 – 2016</p>
+          <p style="margin-top:10px;">Chinese University of Hong Kong — Summer Exchange Program</p>
+        </div>
+        <div>
+          <h3>Languages &amp; interests</h3>
+          <p>Fluent in French, proficient in Spanish.</p>
+          <p style="margin-top:10px;">AI, sustainability, chess, soccer, snowboarding, trail running.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap-wide">
+      <h2>Let's talk about the system you haven't built yet.</h2>
+      <p class="contact-sub">If there's a process eating your team's time, or a mandate that needs someone who can run with limited direction, I'd like to hear about it.</p>
+      <a href="mailto:Nlachgar@gmail.com" class="contact-email">Nlachgar@gmail.com</a>
+      <footer>
+        <span>© 2026 Nabil Lachgar</span>
+        <span>San Francisco, CA</span>
+      </footer>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var nav = document.getElementById('nav');
+  navToggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click', function(){
+      nav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded','false');
+    });
+  });
+</script>
+
+</body>
+</html>
